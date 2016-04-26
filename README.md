@@ -10,10 +10,9 @@ Here you will learn how to use the Authy OneTouch REST APIs to perform the user 
 
 ## Quickstart
 
-### Create an Authy app
+### Create a Twilio account
 
-Create a free [Authy account](https://www.authy.com/developers/) if you don't
-have one already, and then connect it to your Twilio account.
+Create a free [Twilio account](https://www.twilio.com/user/account/authy/getting-started) and access the Authy dashboard.
 
 ### Setup the environment
 
@@ -55,7 +54,10 @@ That's it!
 
 ### Workshop Objectives
 
+The objectives of this workshop are for you to successfully register a new Authy user in your application, send an Authy OneTouch transaction approval request to your Authy app, approve or deny the ficticious money transfer transaction and display the completed transaction.
+
 1. Register the User
+
 Before you can secure a user's login or enforce a second factor you need to create an Authy user. Authy requires you send an email, cellphone and country code for each Authy user. In response you get an Authy ID which you must then store with your user's profile in your own application.
 
 The API Endpoint documentation for enabling two-factor authentication for a user is located [here](http://docs.authy.com/totp.html#enabling-two-factor-authentication-for-a-user)
@@ -68,7 +70,8 @@ authy.register_user('user@email.com', '555-555-5555', function (err, res) {
 });
 ```
 
-1. Creating the Approval Request
+2. Creating the Approval Request
+
 This is the main endpoint. This will create a new approval request for the given Authy ID and send it to the end user along with a push notification to the Authy smartphone application.
 
 The API Endpoint documentation for Creating the Approval Request is located [here](http://docs.authy.com/onetouch.html#create-approvalrequest)
@@ -89,7 +92,8 @@ authy._request( "POST",
 				});
 ```						 
 
-1. Checking for Approval Request Status
+3. Checking for Approval Request Status
+
 The final step is to provide the status of the approval request to the user (typically approved or denied).
 
 The API Endpoint documentation for Checking for Approval Request Status is located [here](http://docs.authy.com/onetouch.html#check-approvalrequest-status)
@@ -105,10 +109,11 @@ authy._request( "GET",
 				});
 ```
 
-## Running the complete solution
-If you want to see the complete solution, navigate to the solution folder and run the server from there.
+## Running our complete solution
+If you want to see a complete solution running, navigate to the solution folder under your project and run the server from there.
    
    ```bash
+   $ cd solution
    $ npm start
    ```
 
