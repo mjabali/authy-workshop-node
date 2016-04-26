@@ -84,7 +84,9 @@ authy._request( "POST",
 					 	"Amount":10
 				 	},
 				seconds_to_expire: 120
-			 	})
+			 	}, function(err, res){
+					//res = {"approval_request":{"uuid":"550e8400-e29b-41d4-a716-446655440000"},"success":true}
+				});
 ```						 
 
 1. Checking for Approval Request Status
@@ -98,7 +100,9 @@ Here is an example API call for checking for Approval Request Status:
 authy._request( "GET", 
 				"/onetouch/json/approval_requests/<UUID>?api_key=<AUTHY_API_KEY>",
 				null, 
-				callback);
+				function(err, res){
+					//res = {"approval_request": {"status": "pending"},"success": true}
+				});
 ```
 
 ## Running the complete solution
