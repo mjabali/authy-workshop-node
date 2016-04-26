@@ -61,11 +61,13 @@ Before you can secure a user's login or enforce a second factor you need to crea
 
 The API Endpoint documentation for enabling two-factor authentication for a user is located [here](http://docs.authy.com/totp.html#enabling-two-factor-authentication-for-a-user)
 
-In this sample, we are using the [Authy API library for Node.js](https://www.npmjs.com/package/authy). Using the Authy library, here is an example API call for registering the user:
+In this sample, we are using the [Authy API library for Node.js](https://www.npmjs.com/package/authy).
+
+Using the Authy library, here is an example API call for registering the user:
 
 ```javascript
-authy.register_user('user@email.com', '555-555-5555', function (err, res) {
-    // res = {user: {id: 1337}} where 1337 = ID assigned to the user 
+authy.register_user('user@email.com', '555-555-5555', '1',function (err, res) {
+    // res = {user: {id: 1337}} where 1337 = Authy Id assigned to the user 
 });
 ```
 
