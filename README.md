@@ -4,7 +4,7 @@ Join us in San Francisco May 24-25th to [learn directly from the developers who 
 
 # Two-Factor Authentication with Authy OneTouch REST APIs and Node.js
 
-Here you will learn how to use the Authy OneTouch REST APIs to perform the user registration, send approval request, poll the status of the request, display transaction information, etc.
+Here you will learn how to use the Authy OneTouch REST APIs to perform a user registration, send an approval request, poll the status of the request, display transaction information, etc.
 
 [Learn more about this code in our interactive code walkthrough](https://www.twilio.com/docs/howto/walkthrough/two-factor-authentication/node/express).
 
