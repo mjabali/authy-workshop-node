@@ -70,7 +70,7 @@ authy.register_user('user@email.com', '555-555-5555', function (err, res) {
 });
 ```
 
-2. Creating the Approval Request
+1. Creating the Approval Request
 
 This is the main endpoint. This will create a new approval request for the given Authy ID and send it to the end user along with a push notification to the Authy smartphone application.
 
