@@ -77,13 +77,13 @@ Here is an example API call for creating an approval request:
 
 ```javascript
 authy._request( "POST",
-				"/onetouch/json/users/<USER\_AUTHY\_ID>/approval_requests?api_key=<AUTHY\_API\_KEY>",
+				"/onetouch/json/users/<USER_AUTHY_ID>/approval_requests?api_key=<AUTHY_API_KEY>",
 				{message: "Transfer Money Request",
 				 	details: {
 					 	"Account Number":"12345",
 					 	"Amount":10
 				 	},
-				seconds\_to\_expire: 120
+				seconds_to_expire: 120
 			 	})
 ```						 
 
@@ -96,7 +96,7 @@ Here is an example API call for checking for Approval Request Status:
 
 ```javascript
 authy._request( "GET", 
-				"/onetouch/json/approval_requests/<UUID>?api_key=<AUTHY\_API\_KEY>",
+				"/onetouch/json/approval_requests/<UUID>?api_key=<AUTHY_API_KEY>",
 				null, 
 				callback);
 ```
