@@ -53,6 +53,14 @@ This project is built using the [Express](http://expressjs.com/) web framework.
 
 That's it!
 
+### Workshop Objectives
+
+1. Register the User
+1. Send the Approval Request
+1. Poll for Approval Request Updates
+
+If you want to see the complete solution, navigate to the solution folder and run the server from there.
+
 ## Meta
 
 * No warranty expressed or implied. Software is as is.

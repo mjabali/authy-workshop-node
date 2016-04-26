@@ -64,15 +64,22 @@ app.post('/processtransaction', function(req, res){
 					'&status=' + appr.approval_request.status +
 					'&trans_id=' + transaction_id);
 			}	
-		}
-		
+		}	
 		authy_url ="/onetouch/json/approval_requests/" + uuid + "?api_key=" + process.env.AUTHY_API_KEY;   
 		authy._request("get", authy_url, null, callback);
 	};	
 	
 	(function(){
 	    authy_url="/onetouch/json/users/" + authy_id + "/approval_requests?api_key=" + process.env.AUTHY_API_KEY;   
-	    authy._request("post", authy_url,{message: 'Money Transfer Request.', seconds_to_expire: 120}, function(err, authyreq){
+	    authy._request("post", 
+						authy_url,
+						{message: 'Transfer Money to ' + req.body.email2,
+						 details: {	'From': user_email,
+									'To': req.body.email2,
+									'Account Number': req.body.acct,
+									'US Dollar Amount': '$' + req.body.amt
+								  },
+						 seconds_to_expire: 120}, function(err, authyreq){
 			if(err){
 				console.log(err);
 			}else{
