@@ -56,8 +56,7 @@ That's it!
 
 The objectives of this workshop are for you to successfully register a new Authy user in your application, send an Authy OneTouch transaction approval request to your Authy app, approve or deny the ficticious money transfer transaction and display the completed transaction.
 
-1. Register the User
-
+####Register the User
 Before you can secure a user's login or enforce a second factor you need to create an Authy user. Authy requires you send an email, cellphone and country code for each Authy user. In response you get an Authy ID which you must then store with your user's profile in your own application.
 
 The API Endpoint documentation for enabling two-factor authentication for a user is located [here](http://docs.authy.com/totp.html#enabling-two-factor-authentication-for-a-user)
@@ -70,8 +69,7 @@ authy.register_user('user@email.com', '555-555-5555', function (err, res) {
 });
 ```
 
-1. Creating the Approval Request
-
+####Creating the Approval Request
 This is the main endpoint. This will create a new approval request for the given Authy ID and send it to the end user along with a push notification to the Authy smartphone application.
 
 The API Endpoint documentation for Creating the Approval Request is located [here](http://docs.authy.com/onetouch.html#create-approvalrequest)
@@ -92,7 +90,7 @@ authy._request( "POST",
 				});
 ```						 
 
-3. Checking for Approval Request Status
+####Checking for Approval Request Status
 
 The final step is to provide the status of the approval request to the user (typically approved or denied).
 
