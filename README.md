@@ -24,8 +24,8 @@ This project is built using the [Express](http://expressjs.com/) web framework.
 1. First clone this repository and `cd` into it.
 
    ```bash
-   $ git clone git@github.com:mjabali/XXX.git
-   $ cd XXX
+   $ git clone https://github.com/mjabali/authy-workshop-node.git
+   $ cd authy-workshop-node
    ```
 
 1. Install the dependencies.
