@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Authy OneTouch</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="https://www.authy.com/form.authy.min.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://www.authy.com/form.authy.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron" style="background-image: url('https://www.authy.com/downloads/authy-symbol.svg');background-repeat: no-repeat; background-size: contain; background-position: right;">
+    <h1>Authy OneTouch</h1>
+    <p>We're making it easy to add 2FA!</p> 
+    <p>Register Below!</p>
+  </div>
+<form action="/register" method="post"> 
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Email Address</h3>
+	  <input type="text" name="email" label="email" required></input>      
+      <p>Enter your email address</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Country Code</h3>
+	  <input class="authy-countries" id="countries-input" type="text" name="country_code" data-show-as="number"></input>
+      <p>Enter the country code of your telephone number US=1 UK=44 etc</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Phone Number</h3>
+      <input type="text" name="phone_number" required></input>
+      <input type="submit" value="Register"></input>        
+      <p>Enter your phone number without the country code or special characters</p>
+    </div>
+
+
+  </div>
+</form>
+</div>
+
+</body>
+</html>
