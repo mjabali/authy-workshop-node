@@ -101,7 +101,12 @@ authy._request( "GET",
 				callback);
 ```
 
+## Running the complete solution
 If you want to see the complete solution, navigate to the solution folder and run the server from there.
+   
+   ```bash
+   $ npm start
+   ```
 
 ## Meta
 
