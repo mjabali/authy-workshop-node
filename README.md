@@ -16,7 +16,7 @@ Create a free [Twilio account](https://www.twilio.com/user/account/authy/getting
 
 ### Download the Authy app
 
-Download the Authy mobile app from the [Apple AppStore](https://itunes.apple.com/us/app/authy/id494168017?mt=8) or [Google Play](https://play.google.com/store/apps/details?id=com.authy.authy&hl=en)
+Download and activate the Authy mobile app from the [Apple AppStore](https://itunes.apple.com/us/app/authy/id494168017?mt=8) or [Google Play](https://play.google.com/store/apps/details?id=com.authy.authy&hl=en)
 
 ### Setup the environment
 
