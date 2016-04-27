@@ -14,6 +14,10 @@ Here you will learn how to use the Authy OneTouch REST APIs to perform a user re
 
 Create a free [Twilio account](https://www.twilio.com/user/account/authy/getting-started) and access the Authy dashboard.
 
+### Download the Authy app
+
+Download the Authy mobile app from the [Apple AppStore](https://itunes.apple.com/us/app/authy/id494168017?mt=8) or [Google Play](https://play.google.com/store/apps/details?id=com.authy.authy&hl=en)
+
 ### Setup the environment
 
 This example assumes you already have [Node.js](https://nodejs.org) already installed on your machine.
