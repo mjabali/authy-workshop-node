@@ -1,7 +1,3 @@
-<a href="http://twilio.com/signal">![](https://s3.amazonaws.com/baugues/signal-logo.png)</a>
-
-Join us in San Francisco May 24-25th to [learn directly from the developers who build Authy](https://www.twilio.com/signal/schedule/2crLXWsVZaA2WIkaCUyYOc/aut).
-
 # Two-Factor Authentication with Authy OneTouch REST APIs and Node.js
 
 Here you will learn how to use the Authy OneTouch REST APIs to perform a user registration, send an approval request, poll the status of the request, display transaction information, etc.
